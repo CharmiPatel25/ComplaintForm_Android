@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Complaint Form</string>
+    <string-array name="empstatus_array">
+        
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Trainee</item>
+    </string-array>
+
+    <string-array name="empdesignation_array">
+        <item>Software Engineer</item>
+        <item>Sr. Software Engineer</item>
+        <item>Project Manager</item>
+        <item>Support Engineer</item>
+        <item>Designer</item>
+        <item>Marketing</item>
+    </string-array>
+
+</resources>

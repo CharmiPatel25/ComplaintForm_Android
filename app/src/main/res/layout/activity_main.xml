@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2E2F4"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mr." />
+
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mrs." />
+
+            <RadioButton
+                android:id="@+id/third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miss." />
+
+            <RadioButton
+                android:id="@+id/fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ms." />
+
+            <RadioButton
+                android:id="@+id/fifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr." />
+
+            <RadioButton
+                android:id="@+id/sixth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sir Lord" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtxtFrstName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suffix"
+            android:layout_marginTop="15dp"
+            android:hint="FirstName"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtxtLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suffix"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/edtxtFrstName"
+            android:hint="LastName"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lblEmpStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtFrstName"
+            android:layout_marginTop="30dp"
+            android:text="Employee Status  " />
+
+        <Spinner
+            android:id="@+id/spinnerempsts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtFrstName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/lblEmpStatus" />
+
+        <TextView
+            android:id="@+id/lblEmpDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblEmpStatus"
+            android:layout_marginTop="30dp"
+            android:text="Designation  " />
+
+        <Spinner
+            android:id="@+id/spinnerDesigntn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblEmpStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/lblEmpDesignation" />
+
+        <EditText
+            android:id="@+id/edtxtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/spinnerDesigntn"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:hint="Address: Locality/Street/City/Province"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtxtEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtAddress"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:hint="Email ID"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtxtPhone"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtAddress"
+            android:layout_marginLeft="-298dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/edtxtEmail"
+            android:hint="Phone number"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/txtDatePicker"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtPhone"
+            android:hint="Select Issue Date " />
+
+        <TextView
+            android:id="@+id/lblIssueType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDatePicker"
+            android:layout_marginTop="19dp"
+            android:text="Issue Type  " />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network Problem"
+            android:layout_below="@+id/lblIssueType"
+            android:id="@+id/chkNetwk"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System Crashing"
+            android:layout_below="@+id/chkNetwk"
+            android:id="@+id/chksysCrash"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slow Internet"
+            android:layout_below="@+id/chksysCrash"
+            android:id="@+id/chkslowInternet"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Software Installation"
+            android:layout_below="@+id/chkslowInternet"
+            android:id="@+id/chksoftInstall" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lblSeverityStar"
+    android:text="Severity"
+    android:layout_below="@+id/chksoftInstall"
+    android:layout_marginTop="15dp"/>
+        <RatingBar
+            android:id="@+id/ratingSeverity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblSeverityStar"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:saveEnabled="true" />
+
+        <EditText
+            android:id="@+id/txtDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingSeverity"
+            android:hint="Enter Detail Description here"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="101dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/txtDetailDesc"
+            android:layout_marginTop="10dp"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@id/txtDetailDesc"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/btnClear"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
